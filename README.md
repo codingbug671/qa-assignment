@@ -36,7 +36,7 @@ This project contains automated tests for the **Magento Software Testing - Luma 
 1. **Clone the repository:**
 
    ```bash
-   https://github.com/codingbug671/qa-assignment.git
+   git clone https://github.com/codingbug671/qa-assignment.git
    cd qa-assignment
 
 2. **Install dependencies:**
