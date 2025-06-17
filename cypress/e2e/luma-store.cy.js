@@ -10,7 +10,7 @@ const signInPage = new SignInPage();
 const productPage = new ProductsPage();
 const shippingPage = new ShippingPage();
 
-describe('Luna Store - Test Cases', () => {
+describe('Luma Store - Test Cases', () => {
 
   before(() => {
     cy.viewport('macbook-15');

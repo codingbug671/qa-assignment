@@ -86,7 +86,7 @@ export default class ProductsPage {
     {
         cy.log('Search a Product');
         cy.get(this.getProductSearchBar()).type(productname+"{enter}");
-        cy.wait(2000);
+        cy.customWait();
 
     }
    
@@ -97,10 +97,10 @@ export default class ProductsPage {
         for (let i = 0; i < 3; i++) {
          cy.get(this.getAddToCartBtn()).eq(i).trigger('mouseover', { force: true });
          cy.get(this.getAddToCartBtn()).eq(i).click({ force: true });
-         cy.wait(2000);
+         cy.customWait();
         }
 
-        cy.wait(2000);
+        cy.customWait();
 
 
     }
@@ -111,7 +111,7 @@ export default class ProductsPage {
     {
         cy.log('Go to checkout');
         cy.get(this.getCheckoutBtn()).click({ force: true });
-        cy.wait(2000);
+        cy.customWait();
     }
 
 
@@ -142,10 +142,10 @@ export default class ProductsPage {
         cy.log('add Items to wishlist and proceed to checkout');
         cy.get(this.getWishListBtn()).eq(0).trigger('mouseover', { force: true });
         cy.get(this.getWishListBtn()).eq(0).click({ force: true });
-        cy.wait(2000);
+        cy.customWait();
         cy.get(this.getWishlistItemToCartBtn()).click();
         cy.get(this.getItemInCart()).click();
-        cy.wait(2000);
+        cy.customWait();
         this.proceedToCheckout();
         
     }

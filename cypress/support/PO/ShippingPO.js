@@ -52,7 +52,7 @@ export default class ShippingPage {
     cy.fixture('users').then((users) => {
         users.forEach((user) => {
             cy.log('Filling in the shipping details form');
-            cy.wait(2000);
+            cy.customWait();
             cy.get(this.getStreetAddressInput()).type(user.streetaddress);
             cy.get(this.getCityInput()).type(user.city);
             cy.get(this.getStateInput()).select('Alabama');
