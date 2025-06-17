@@ -39,6 +39,11 @@ export default class ShippingPage {
         return 'button[class="action primary checkout"]';
     }
 
+     getPurchaseMessage()
+     {
+        return 'span[data-ui-id="page-title-wrapper"]'
+     }
+
 
     
    addShippingDetailsAndPlaceOrder() {
@@ -56,6 +61,9 @@ export default class ShippingPage {
             cy.get(this.getShippingMethodBtn()).first().click();
             cy.get(this.getNextBtn()).click();
             cy.get(this.getCheckoutBtn()).click();
+            cy.get(this.getPurchaseMessage())
+                .should('be.visible')
+                .and('contain.text', 'Thank you for your purchase!');
 
         });
     });

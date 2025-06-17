@@ -27,21 +27,21 @@ export default class SignInPage {
     }
 
 
-    signInUser() {
+    signInUser(email) {
     cy.log('Sign In User');
     cy.get(this.getSignInBtn()).first().click();
 
     cy.fixture('users').then((users) => {
         users.forEach((user) => {
             const fullName = `${user.firstname} ${user.lastname}`;
-            cy.get(this.getEmailIDInput()).type(user.email);
+            cy.get(this.getEmailIDInput()).type(email);
             cy.get(this.getPasswordInput()).first().type(user.password);
             cy.get(this.getSigninBtn()).first().click();
 
-            // Assertion for greeting message
+        
              cy.get(this.getGreetingLabel()).first().should('have.text', `Welcome, ${fullName}!`).then(() => {
                 cy.log('User successfully signed in');
-              //  cy.screenshot('signin-success');
+             
 
             });
         });

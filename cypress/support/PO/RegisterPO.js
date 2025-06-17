@@ -52,8 +52,12 @@ export default class RegisterPage {
     }
 
 
+    generateRandomEmail() {
+    const randomNum = Math.floor(Math.random() * 100000);
+    return `testuser${randomNum}@gmail.com`;
+    }
 
-    registerNewUser() {
+    registerNewUser(email) {
     cy.log('Create a new user');
     cy.get(this.getCreateAccountBtn()).first().click();
 
@@ -64,7 +68,7 @@ export default class RegisterPage {
 
             cy.get(this.getFirstNameInput()).type(user.firstname);
             cy.get(this.getLastNameInput()).type(user.lastname);
-            cy.get(this.getEmailIDInput()).type(user.email);
+            cy.get(this.getEmailIDInput()).type(email);
             cy.get(this.getPasswordInput()).type(user.password);
             cy.get(this.getConfirmPasswordInput()).type(user.password);
             cy.get(this.getCreateAccBtn()).click();
