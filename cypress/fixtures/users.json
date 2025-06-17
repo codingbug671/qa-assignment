@@ -1,0 +1,12 @@
+[
+  {
+    "firstname": "Test",
+    "lastname": "User32",
+    "email": "testuser32@gmail.com",
+    "password": "Test@1234",
+    "streetaddress": "test",
+    "city": "test",
+    "zipcode": "0000",
+    "phoneno": "0556781234"
+  }
+]

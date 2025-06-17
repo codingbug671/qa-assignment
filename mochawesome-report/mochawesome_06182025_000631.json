@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-06-17T20:04:42.910Z",
+    "end": "2025-06-17T20:06:31.899Z",
+    "duration": 108989,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c678d41f-9f84-4e49-b055-0e35b7c6d973",
+      "title": "",
+      "fullFile": "cypress\\e2e\\luna-store.cy.js",
+      "file": "cypress\\e2e\\luna-store.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "19f09fa1-2603-4612-af46-e8c8884b1957",
+          "title": "Luna Store - Test Cases A to D",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A: Register and Login",
+              "fullTitle": "Luna Store - Test Cases A to D A: Register and Login",
+              "timedOut": null,
+              "duration": 34409,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "registerPage.visitLunaStore();\nregisterPage.registerNewUser();\nregisterPage.signOutUser();\nsignInPage.signInUser();",
+              "err": {},
+              "uuid": "c2624a5e-3496-448f-a40f-f20ef78e6dd0",
+              "parentUUID": "19f09fa1-2603-4612-af46-e8c8884b1957",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "B: Add Multiple Products and Place Order",
+              "fullTitle": "Luna Store - Test Cases A to D B: Add Multiple Products and Place Order",
+              "timedOut": null,
+              "duration": 37973,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "productPage.searchProduct(\"watch\");\nproductPage.addMultipleProductsToCart();\nproductPage.verifyCartTotal();\nproductPage.proceedToCheckout();\nshippingPage.addShippingDetailsAndPlaceOrder();",
+              "err": {},
+              "uuid": "7961f838-050f-434c-8248-eee4f22a0cce",
+              "parentUUID": "19f09fa1-2603-4612-af46-e8c8884b1957",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "C: Add to Wishlist and Checkout from Wishlist",
+              "fullTitle": "Luna Store - Test Cases A to D C: Add to Wishlist and Checkout from Wishlist",
+              "timedOut": null,
+              "duration": 27223,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "productPage.searchProduct(\"watch\");\nproductPage.addItemToWishlistAndCheckout();",
+              "err": {},
+              "uuid": "645bd6df-3e67-4f3a-b1d4-ede4ffc7cf7f",
+              "parentUUID": "19f09fa1-2603-4612-af46-e8c8884b1957",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "D: Search and Validate Results",
+              "fullTitle": "Luna Store - Test Cases A to D D: Search and Validate Results",
+              "timedOut": null,
+              "duration": 9143,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "productPage.searchProductAndValidateResults();",
+              "err": {},
+              "uuid": "656c96a7-988c-4624-93fb-81e2548361c6",
+              "parentUUID": "19f09fa1-2603-4612-af46-e8c8884b1957",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c2624a5e-3496-448f-a40f-f20ef78e6dd0",
+            "7961f838-050f-434c-8248-eee4f22a0cce",
+            "645bd6df-3e67-4f3a-b1d4-ede4ffc7cf7f",
+            "656c96a7-988c-4624-93fb-81e2548361c6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 108748,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
