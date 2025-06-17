@@ -1,6 +1,6 @@
 # QA Engineer Assignment
 
-This project contains automated tests for the **Magento Software Testing - Luna Store** platform, including both UI end-to-end tests, using [Cypress](https://www.cypress.io/). These tests ensure the core functionalities like register/login student, search products, cart and checkout process work correctly and reliably.
+This project contains automated tests for the **Magento Software Testing - Luma Store** platform, including both UI end-to-end tests, using [Cypress](https://www.cypress.io/). These tests ensure the core functionalities like register/login student, search products, cart and checkout process work correctly and reliably.
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ This project contains automated tests for the **Magento Software Testing - Luna 
 
 ## Features
 
-- Automated UI tests for magento software testing - luna store covering all functionalities
+- Automated UI tests for magento software testing - luma store covering all functionalities
 - API tests using postman for petstore.  
 - Manual and performance testcases for magento software testing site.  
   
